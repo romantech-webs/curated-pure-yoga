@@ -1,0 +1,266 @@
+{
+  "faq": [
+    {
+      "answer": "El yoga facial es una disciplina que combina ejercicios musculares específicos, técnicas de respiración y relajación para tonificar, fortalecer y rejuvenecer el rostro de forma natural. Estimula la producción de colágeno y mejora la circulación.",
+      "question": "¿Qué es el yoga facial y cómo funciona?"
+    },
+    {
+      "answer": "El yoga facial ofrece resultados naturales y progresivos sin contraindicaciones, fortalece los músculos en lugar de paralizarlos, y puedes practicarlo en casa. Ambas técnicas pueden complementarse perfectamente según tus necesidades.",
+      "question": "¿Qué ventajas tiene el yoga facial frente al botox?"
+    },
+    {
+      "answer": "No necesitas experiencia previa. Los cursos están diseñados desde nivel básico, incluyendo anatomía facial, técnicas específicas y práctica supervisada. Solo necesitas interés genuino en el bienestar y la belleza natural.",
+      "question": "¿Qué requisitos necesito para la formación?"
+    },
+    {
+      "answer": "Sí, nuestra certificación está respaldada por nuestra experiencia médica y metodología propia. Incluye diploma oficial, material didáctico completo y seguimiento profesional para tu desarrollo como instructor.",
+      "question": "¿Está reconocida la certificación de instructores?"
+    },
+    {
+      "answer": "Absolutamente. De hecho, es nuestra especialidad. La combinación potencia los resultados de ambas técnicas: el yoga facial prepara y mantiene los tejidos, mientras que los tratamientos médicos aportan resultados más inmediatos cuando es necesario.",
+      "question": "¿Puedo combinar yoga facial con medicina estética?"
+    },
+    {
+      "answer": "Los primeros cambios se notan desde las primeras semanas: mejor tono, relajación de tensiones y luminosidad. Los resultados más visibles en firmeza y reducción de líneas aparecen entre 6-12 semanas de práctica regular.",
+      "question": "¿Cuándo veré resultados del yoga facial?"
+    }
+  ],
+  "seo": {
+    "ogImage": "/og-image.jpg",
+    "keywords": [
+      "yoga facial bilbao",
+      "formación yoga facial",
+      "certificación yoga facial",
+      "kinesiotape facial",
+      "curso yoga facial bilbao",
+      "instructor yoga facial",
+      "medicina estética bilbao",
+      "botox natural bilbao",
+      "rejuvenecimiento facial natural",
+      "wellness facial bilbao"
+    ],
+    "defaultTitle": "PURE Yoga Facial Bilbao | Formación y Certificación | Medicina Estética",
+    "titleTemplate": "%s | PURE Yoga Facial Bilbao",
+    "defaultDescription": "Centro especializado en yoga facial en Bilbao. Formación profesional, certificación de instructores y medicina estética integrativa. Método propio para resultados naturales."
+  },
+  "logo": "/images/logo.png",
+  "name": "PURE Yoga Facial",
+  "team": [
+    {
+      "bio": "Médico especialista en medicina estética con más de 10 años de experiencia, pionera en integrar yoga facial con tratamientos médicos. Formadora certificada apasionada por la belleza natural y el bienestar integral.",
+      "name": "Ana Cristina",
+      "role": "Fundadora y Formadora Principal",
+      "image": "/images/team/member-0.webp"
+    }
+  ],
+  "email": "",
+  "legal": {
+    "cif": "",
+    "companyName": "CURATED.BY AC MEDICINA ESTETICA",
+    "registeredAddress": "Diego Lopez Haroko Kale Nagusia, 29, 1°D, Abando, 48009 Bilbao, Vizcaya, España"
+  },
+  "phone": "623 03 25 14",
+  "whyUs": [
+    {
+      "icon": "Sparkles",
+      "title": "Método Propio Integral",
+      "description": "Combinamos yoga facial con medicina estética en un enfoque único que potencia los beneficios de ambas disciplinas para resultados superiores."
+    },
+    {
+      "icon": "Shield",
+      "title": "Experiencia Médica Certificada",
+      "description": "Nuestra fundadora combina años de experiencia en medicina estética con formación especializada en yoga facial para ofrecerte la máxima garantía."
+    },
+    {
+      "icon": "Heart",
+      "title": "Enfoque Holístico",
+      "description": "No solo tratamos la apariencia, trabajamos la conexión mente-cuerpo para un bienestar integral que se refleja en tu rostro."
+    },
+    {
+      "icon": "Leaf",
+      "title": "Resultados Naturales",
+      "description": "Nuestro objetivo es realzar tu belleza natural, no cambiarla. Conseguimos resultados visibles respetando la armonía de tus facciones."
+    }
+  ],
+  "colors": {
+    "accent": "#C4A882",
+    "neutral": "#FAF8F4",
+    "primary": "#7B8F6B",
+    "secondary": "#2D2A26"
+  },
+  "social": {
+    "tiktok": null,
+    "facebook": null,
+    "linkedin": null,
+    "instagram": null
+  },
+  "address": {
+    "city": "Bilbao",
+    "street": "Diego Lopez Haroko Kale Nagusia, 29, 1°D, Abando",
+    "country": "España",
+    "province": "Vizcaya",
+    "postalCode": "48009"
+  },
+  "gallery": [
+    { "alt": "PURE Yoga Facial - Imagen 1", "src": "/images/gallery/photo-0.webp" },
+    { "alt": "PURE Yoga Facial - Imagen 2", "src": "/images/gallery/photo-1.webp" },
+    { "alt": "PURE Yoga Facial - Imagen 3", "src": "/images/gallery/photo-2.webp" },
+    { "alt": "PURE Yoga Facial - Imagen 4", "src": "/images/gallery/photo-3.webp" },
+    { "alt": "PURE Yoga Facial - Imagen 5", "src": "/images/gallery/photo-4.webp" },
+    { "alt": "PURE Yoga Facial - Imagen 6", "src": "/images/gallery/photo-5.webp" },
+    { "alt": "PURE Yoga Facial - Imagen 7", "src": "/images/gallery/photo-6.webp" },
+    { "alt": "PURE Yoga Facial - Imagen 8", "src": "/images/gallery/photo-7.webp" }
+  ],
+  "process": [
+    {
+      "icon": "Search",
+      "step": 1,
+      "title": "Consulta Personalizada",
+      "description": "Analizamos tu rostro, conocemos tus objetivos y evaluamos qué combinación de técnicas se adapta mejor a ti."
+    },
+    {
+      "icon": "FileText",
+      "step": 2,
+      "title": "Plan Integral",
+      "description": "Diseñamos un programa personalizado que puede incluir yoga facial, medicina estética y/o formación según tus necesidades."
+    },
+    {
+      "icon": "Play",
+      "step": 3,
+      "title": "Sesiones y Formación",
+      "description": "Implementamos tu plan con sesiones regulares, enseñándote técnicas que podrás aplicar en casa para potenciar los resultados."
+    },
+    {
+      "icon": "Star",
+      "step": 4,
+      "title": "Resultados Duraderos",
+      "description": "Disfrutas de una belleza natural renovada con conocimientos para mantener y mejorar los resultados a largo plazo."
+    }
+  ],
+  "reviews": {
+    "url": "https://maps.google.com/?cid=10086339994999763638",
+    "count": 164,
+    "rating": 4.3,
+    "featured": [
+      {
+        "date": "Hace 4 meses",
+        "text": "Mi centro estético por excelencia. Profesionalidad y atención inigualables. Los tratamientos son muy efectivos si los acompañas de constancia. Especial mención a Ana, que me trata con un mimo y cuidado máximos.",
+        "author": "B Etxebarria",
+        "rating": 5
+      },
+      {
+        "date": "Hace 3 semanas",
+        "text": "Voy desde el año pasado, empecé haciéndome las cejas y acabé haciéndome más cositas. Estoy muy contenta con el trabajo que hacen las chicas, son encantadoras.",
+        "author": "Dana Varela",
+        "rating": 5
+      },
+      {
+        "date": "Hace 3 meses",
+        "text": "He empezado a ir hace poco pero estoy encantada con el trato. Te atienden muy bien, te explican qué tratamientos son los más adecuados para ti. Recomendable.",
+        "author": "Leire De Bilbao",
+        "rating": 5
+      },
+      {
+        "date": "Hace 2 meses",
+        "text": "Me he hecho los dos tratamientos de la oferta y estoy encantada. Sitio agradable, buen trato, muy majas y sobre todo buen resultado. MERECE LA PENA.",
+        "author": "Isabel Peralta",
+        "rating": 5
+      }
+    ]
+  },
+  "tagline": "Belleza natural desde el interior",
+  "ctaLabel": "Reserva tu consulta",
+  "schedule": [
+    { "days": "Lunes", "hours": "Cerrado" },
+    { "days": "Martes - Viernes", "hours": "10:00 – 20:00" },
+    { "days": "Sábado - Domingo", "hours": "Cerrado" }
+  ],
+  "services": [
+    {
+      "id": "yoga-facial",
+      "icon": "Sparkles",
+      "name": "Yoga Facial Método PURE",
+      "benefits": ["Tonificación muscular natural", "Reducción de arrugas", "Mejora de la elasticidad"],
+      "description": "Nuestro método exclusivo combina ejercicios faciales específicos con técnicas de respiración y relajación. Tonifica músculos, mejora la circulación y reduce signos de envejecimiento de forma natural."
+    },
+    {
+      "id": "kinesiotape-facial",
+      "icon": "Leaf",
+      "name": "Kinesiotape Facial",
+      "benefits": ["Drenaje linfático", "Lifting natural", "Relajación muscular"],
+      "description": "Técnica innovadora que utiliza vendas especiales para estimular la circulación, drenar líquidos y tonificar los músculos faciales. Complemento perfecto al yoga facial."
+    },
+    {
+      "id": "formacion-yoga-facial",
+      "icon": "GraduationCap",
+      "name": "Formación en Yoga Facial",
+      "benefits": ["Conocimiento especializado", "Práctica guiada", "Material didáctico completo"],
+      "description": "Cursos presenciales donde aprenderás las bases del yoga facial, anatomía aplicada y técnicas específicas. Ideal para uso personal o profesional."
+    },
+    {
+      "id": "certificacion-instructores",
+      "icon": "Award",
+      "name": "Certificación de Instructores",
+      "benefits": ["Certificación oficial", "Salida profesional", "Metodología exclusiva"],
+      "description": "Programa completo de formación profesional que te certifica como instructor de yoga facial. Incluye metodología, práctica clínica y herramientas de negocio."
+    },
+    {
+      "id": "botox",
+      "icon": "Syringe",
+      "name": "Botox",
+      "benefits": ["Resultados inmediatos", "Técnica médica", "Aspecto natural"],
+      "description": "Aplicación médica de toxina botulínica para suavizar arrugas de expresión. Realizada con técnica experta para mantener la naturalidad del rostro."
+    },
+    {
+      "id": "acido-hialuronico",
+      "icon": "Heart",
+      "name": "Ácido Hialurónico",
+      "benefits": ["Hidratación profunda", "Volumen natural", "Rejuvenecimiento integral"],
+      "description": "Tratamiento de relleno y hidratación profunda que devuelve volumen y suaviza líneas de expresión. Aplicación precisa para resultados armoniosos."
+    },
+    {
+      "id": "consulta-integral",
+      "icon": "Users",
+      "name": "Consulta Integral",
+      "benefits": ["Diagnóstico personalizado", "Plan integral", "Seguimiento profesional"],
+      "description": "Evaluación personalizada que combina análisis facial, valoración de necesidades y diseño de plan de tratamiento integrando yoga facial y medicina estética."
+    }
+  ],
+  "whatsapp": "+34623032514",
+  "specialty": "Yoga Facial Integral y Formación Profesional",
+  "schemaType": "HealthAndBeautyBusiness",
+  "statsLabel": "Clientas satisfechas",
+  "coordinates": { "lat": 43.2624, "lng": -2.93272 },
+  "ctaHeadline": "Comienza tu transformación hoy",
+  "description": "Centro pionero en Bilbao que combina yoga facial con medicina estética integrativa. Método propio que potencia tu belleza natural con técnicas no invasivas y formación profesional certificada.",
+  "sectionCopy": {
+    "faqLabel": "Preguntas Frecuentes",
+    "faqTitle": "Resolvemos Tus Dudas",
+    "teamLabel": "Conoce a la Fundadora",
+    "teamTitle": "Ana Cristina",
+    "whyUsLabel": "Por Qué PURE",
+    "whyUsTitle": "Lo Que Nos Hace Diferentes",
+    "galleryLabel": "Galería",
+    "galleryTitle": "Nuestro Espacio",
+    "processLabel": "Cómo Funciona",
+    "processTitle": "Tu Camino hacia la Transformación",
+    "reviewsLabel": "Testimonios",
+    "reviewsTitle": "Lo Que Dicen Nuestras Clientas",
+    "locationLabel": "Ubicación",
+    "locationTitle": "Visítanos en Bilbao",
+    "servicesLabel": "Servicios",
+    "servicesTitle": "Nuestros Tratamientos y Formación",
+    "servicesDescription": "Combinamos yoga facial, técnicas de kinesiotape y medicina estética para resultados naturales y duraderos.",
+    "faqDescription": "Todo lo que necesitas saber sobre yoga facial, formación y nuestros tratamientos.",
+    "teamDescription": "La visión detrás de PURE Yoga Facial.",
+    "whyUsDescription": "Un método único que integra lo mejor del yoga facial y la medicina estética.",
+    "galleryDescription": "Un entorno diseñado para tu bienestar y transformación.",
+    "processDescription": "Un proceso personalizado que se adapta a tus objetivos y necesidades."
+  },
+  "heroHeadline": ["Descubre tu belleza natural", "con nuestro método integral"],
+  "googleMapsUrl": "https://maps.google.com/?cid=10086339994999763638",
+  "ctaDescription": "Reserva tu consulta integral personalizada y descubre cómo nuestro método puede potenciar tu belleza natural.",
+  "googleMapsEmbed": "https://maps.google.com/maps?q=CURATED.BY%20AC%20MEDICINA%20ESTETICA%20%4043.2624%2C-2.93272&z=16&output=embed",
+  "heroDescription": "En PURE Yoga Facial transformamos tu rostro desde dentro hacia fuera. Combinamos técnicas ancestrales de yoga facial con los avances de la medicina estética para resultados naturales y duraderos.",
+  "whatsappMessage": "Hola, me interesa conocer más sobre los servicios de PURE Yoga Facial. ¿Podrían darme información sobre sesiones y formación?"
+}
