@@ -28,28 +28,29 @@
   "seo": {
     "ogImage": "/og-image.jpg",
     "keywords": [
+      "medicina estética bilbao",
       "yoga facial bilbao",
       "formación yoga facial",
       "certificación yoga facial",
       "kinesiotape facial",
       "curso yoga facial bilbao",
-      "instructor yoga facial",
-      "medicina estética bilbao",
-      "botox natural bilbao",
+      "botox bilbao",
+      "ácido hialurónico bilbao",
       "rejuvenecimiento facial natural",
-      "wellness facial bilbao"
+      "wellness facial bilbao",
+      "curated by ac"
     ],
-    "defaultTitle": "PURE Yoga Facial Bilbao | Formación y Certificación | Medicina Estética",
-    "titleTemplate": "%s | PURE Yoga Facial Bilbao",
-    "defaultDescription": "Centro especializado en yoga facial en Bilbao. Formación profesional, certificación de instructores y medicina estética integrativa. Método propio para resultados naturales."
+    "defaultTitle": "Curated by AC | Medicina Estética y Yoga Facial en Bilbao",
+    "titleTemplate": "%s | Curated by AC Bilbao",
+    "defaultDescription": "Centro de medicina estética y yoga facial en Bilbao. Tratamientos personalizados, formación profesional y certificación de instructores. Belleza natural con resultados visibles."
   },
   "logo": "/images/logo.png",
-  "name": "PURE Yoga Facial",
+  "name": "Curated",
   "team": [
     {
       "bio": "Médico especialista en medicina estética con más de 10 años de experiencia, pionera en integrar yoga facial con tratamientos médicos. Formadora certificada apasionada por la belleza natural y el bienestar integral.",
       "name": "Ana Cristina",
-      "role": "Fundadora y Formadora Principal",
+      "role": "Fundadora y Directora Médica",
       "image": "/images/team/member-0.webp"
     }
   ],
@@ -102,14 +103,14 @@
     "postalCode": "48009"
   },
   "gallery": [
-    { "alt": "PURE Yoga Facial - Imagen 1", "src": "/images/gallery/photo-0.webp" },
-    { "alt": "PURE Yoga Facial - Imagen 2", "src": "/images/gallery/photo-1.webp" },
-    { "alt": "PURE Yoga Facial - Imagen 3", "src": "/images/gallery/photo-2.webp" },
-    { "alt": "PURE Yoga Facial - Imagen 4", "src": "/images/gallery/photo-3.webp" },
-    { "alt": "PURE Yoga Facial - Imagen 5", "src": "/images/gallery/photo-4.webp" },
-    { "alt": "PURE Yoga Facial - Imagen 6", "src": "/images/gallery/photo-5.webp" },
-    { "alt": "PURE Yoga Facial - Imagen 7", "src": "/images/gallery/photo-6.webp" },
-    { "alt": "PURE Yoga Facial - Imagen 8", "src": "/images/gallery/photo-7.webp" }
+    { "alt": "Curated - Centro de medicina estética en Bilbao", "src": "/images/gallery/photo-0.webp" },
+    { "alt": "Curated - Tratamientos de belleza natural", "src": "/images/gallery/photo-1.webp" },
+    { "alt": "Curated - Espacio de bienestar", "src": "/images/gallery/photo-2.webp" },
+    { "alt": "Curated - Yoga facial y medicina estética", "src": "/images/gallery/photo-3.webp" },
+    { "alt": "Curated - Ambiente exclusivo", "src": "/images/gallery/photo-4.webp" },
+    { "alt": "Curated - Consulta personalizada", "src": "/images/gallery/photo-5.webp" },
+    { "alt": "Curated - Resultados naturales", "src": "/images/gallery/photo-6.webp" },
+    { "alt": "Curated - Formación profesional", "src": "/images/gallery/photo-7.webp" }
   ],
   "process": [
     {
@@ -168,7 +169,7 @@
       }
     ]
   },
-  "tagline": "Belleza natural desde el interior",
+  "tagline": "Medicina estética y belleza natural",
   "ctaLabel": "Reserva tu consulta",
   "schedule": [
     { "days": "Lunes", "hours": "Cerrado" },
@@ -179,7 +180,7 @@
     {
       "id": "yoga-facial",
       "icon": "Sparkles",
-      "name": "Yoga Facial Método PURE",
+      "name": "Yoga Facial",
       "benefits": ["Tonificación muscular natural", "Reducción de arrugas", "Mejora de la elasticidad"],
       "description": "Nuestro método exclusivo combina ejercicios faciales específicos con técnicas de respiración y relajación. Tonifica músculos, mejora la circulación y reduce signos de envejecimiento de forma natural."
     },
@@ -227,18 +228,18 @@
     }
   ],
   "whatsapp": "+34623032514",
-  "specialty": "Yoga Facial Integral y Formación Profesional",
+  "specialty": "Medicina Estética y Yoga Facial",
   "schemaType": "HealthAndBeautyBusiness",
   "statsLabel": "Clientas satisfechas",
   "coordinates": { "lat": 43.2624, "lng": -2.93272 },
   "ctaHeadline": "Comienza tu transformación hoy",
-  "description": "Centro pionero en Bilbao que combina yoga facial con medicina estética integrativa. Método propio que potencia tu belleza natural con técnicas no invasivas y formación profesional certificada.",
+  "description": "Centro de medicina estética y yoga facial en Bilbao. Tratamientos personalizados que combinan lo mejor de la medicina estética con técnicas naturales de yoga facial para resultados visibles y duraderos.",
   "sectionCopy": {
     "faqLabel": "Preguntas Frecuentes",
     "faqTitle": "Resolvemos Tus Dudas",
     "teamLabel": "Conoce a la Fundadora",
     "teamTitle": "Ana Cristina",
-    "whyUsLabel": "Por Qué PURE",
+    "whyUsLabel": "Por Qué Curated",
     "whyUsTitle": "Lo Que Nos Hace Diferentes",
     "galleryLabel": "Galería",
     "galleryTitle": "Nuestro Espacio",
@@ -252,7 +253,7 @@
     "servicesTitle": "Nuestros Tratamientos y Formación",
     "servicesDescription": "Combinamos yoga facial, técnicas de kinesiotape y medicina estética para resultados naturales y duraderos.",
     "faqDescription": "Todo lo que necesitas saber sobre yoga facial, formación y nuestros tratamientos.",
-    "teamDescription": "La visión detrás de PURE Yoga Facial.",
+    "teamDescription": "La visión detrás de Curated.",
     "whyUsDescription": "Un método único que integra lo mejor del yoga facial y la medicina estética.",
     "galleryDescription": "Un entorno diseñado para tu bienestar y transformación.",
     "processDescription": "Un proceso personalizado que se adapta a tus objetivos y necesidades."
@@ -261,6 +262,6 @@
   "googleMapsUrl": "https://maps.google.com/?cid=10086339994999763638",
   "ctaDescription": "Reserva tu consulta integral personalizada y descubre cómo nuestro método puede potenciar tu belleza natural.",
   "googleMapsEmbed": "https://maps.google.com/maps?q=CURATED.BY%20AC%20MEDICINA%20ESTETICA%20%4043.2624%2C-2.93272&z=16&output=embed",
-  "heroDescription": "En PURE Yoga Facial transformamos tu rostro desde dentro hacia fuera. Combinamos técnicas ancestrales de yoga facial con los avances de la medicina estética para resultados naturales y duraderos.",
-  "whatsappMessage": "Hola, me interesa conocer más sobre los servicios de PURE Yoga Facial. ¿Podrían darme información sobre sesiones y formación?"
+  "heroDescription": "En Curated transformamos tu rostro desde dentro hacia fuera. Combinamos técnicas de yoga facial con los avances de la medicina estética para resultados naturales y duraderos.",
+  "whatsappMessage": "Hola, me interesa conocer más sobre los servicios de Curated. ¿Podrían darme información?"
 }
