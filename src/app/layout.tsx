@@ -3,6 +3,8 @@ import { DM_Sans } from 'next/font/google'
 import { config } from '@/lib/config'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import { CartProvider } from '@/components/store/CartProvider'
+import { CartDrawer } from '@/components/store/CartDrawer'
 import './globals.css'
 
 const dmSans = DM_Sans({
@@ -81,9 +83,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <CartProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+          <CartDrawer />
+        </CartProvider>
       </body>
     </html>
   )

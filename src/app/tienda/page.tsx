@@ -1,0 +1,106 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import { SectionHeader } from '@/components/ui/SectionHeader'
+import { CategoryFilter } from '@/components/store/CategoryFilter'
+import { ProductCard } from '@/components/store/ProductCard'
+import { ProductModal } from '@/components/store/ProductModal'
+import { fetchProducts } from '@/lib/store-api'
+import type { Product, Category } from '@/types/store'
+
+export default function TiendaPage() {
+  const [products, setProducts] = useState<Product[]>([])
+  const [categories, setCategories] = useState<Category[]>([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState('')
+  const [activeCategory, setActiveCategory] = useState<string | null>(null)
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
+
+  useEffect(() => {
+    fetchProducts()
+      .then((data) => {
+        setProducts(data.products)
+        setCategories(data.categories)
+      })
+      .catch((err) => setError(err.message))
+      .finally(() => setLoading(false))
+  }, [])
+
+  const filtered = activeCategory
+    ? products.filter((p) => p.categoryId === activeCategory)
+    : products
+
+  const featured = filtered.filter((p) => p.featured)
+  const rest = filtered.filter((p) => !p.featured)
+  const sorted = [...featured, ...rest]
+
+  return (
+    <section className="pt-28 pb-20 md:pt-36 md:pb-28 min-h-screen">
+      <div className="mx-auto max-w-7xl px-5 md:px-8">
+        <SectionHeader
+          label="Tienda"
+          title="Nuestros Productos"
+          description="Cosmetica y productos de cuidado seleccionados por nuestras especialistas. Compra online y recoge en centro."
+        />
+
+        {loading ? (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+            {Array.from({ length: 8 }).map((_, i) => (
+              <div key={i} className="animate-pulse">
+                <div className="aspect-square bg-neutral rounded-2xl" />
+                <div className="mt-3 h-3 bg-neutral rounded-full w-1/3" />
+                <div className="mt-2 h-4 bg-neutral rounded-full w-2/3" />
+                <div className="mt-3 h-4 bg-neutral rounded-full w-1/4" />
+              </div>
+            ))}
+          </div>
+        ) : error ? (
+          <div className="text-center py-16">
+            <p className="text-muted">{error}</p>
+            <button
+              onClick={() => window.location.reload()}
+              className="mt-4 px-6 py-2.5 bg-primary text-white rounded-xl text-sm font-medium hover:bg-primary-dark transition-colors"
+            >
+              Reintentar
+            </button>
+          </div>
+        ) : products.length === 0 ? (
+          <div className="text-center py-16">
+            <p className="text-muted text-lg">Proximamente...</p>
+            <p className="text-sm text-muted mt-2">Estamos preparando nuestro catalogo de productos</p>
+          </div>
+        ) : (
+          <>
+            <CategoryFilter
+              categories={categories}
+              active={activeCategory}
+              onChange={setActiveCategory}
+            />
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+              {sorted.map((product, i) => (
+                <ProductCard
+                  key={product.id}
+                  product={product}
+                  onSelect={setSelectedProduct}
+                  index={i}
+                />
+              ))}
+            </div>
+
+            {sorted.length === 0 && (
+              <p className="text-center text-muted py-12">
+                No hay productos en esta categoria
+              </p>
+            )}
+          </>
+        )}
+      </div>
+
+      <ProductModal
+        product={selectedProduct}
+        onClose={() => setSelectedProduct(null)}
+      />
+    </section>
+  )
+}

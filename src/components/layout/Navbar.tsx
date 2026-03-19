@@ -4,13 +4,14 @@ import { useState, useEffect } from 'react'
 import { config } from '@/lib/config'
 import { Menu, X, Phone } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { CartButton } from '@/components/store/CartButton'
 
 const navLinks = [
   { href: '/#servicios', label: 'Servicios' },
   { href: '/#proceso', label: 'Método' },
   { href: '/#testimonios', label: 'Testimonios' },
   { href: '/#galeria', label: 'Galería' },
-  { href: '/#faq', label: 'FAQ' },
+  { href: '/tienda/', label: 'Tienda' },
   { href: '/contacto/', label: 'Contacto' },
 ]
 
@@ -52,6 +53,7 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
+          <CartButton />
           <a
             href={`https://wa.me/${config.whatsapp.replace(/[^0-9+]/g, '')}?text=${encodeURIComponent(config.whatsappMessage)}`}
             target="_blank"
@@ -63,14 +65,17 @@ export function Navbar() {
           </a>
         </div>
 
-        {/* Mobile hamburger */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden p-2 text-secondary"
-          aria-label="Menú"
-        >
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+        {/* Mobile: cart + hamburger */}
+        <div className="lg:hidden flex items-center gap-1">
+          <CartButton />
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="p-2 text-secondary"
+            aria-label="Menú"
+          >
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
       </nav>
 
       {/* Mobile menu */}
