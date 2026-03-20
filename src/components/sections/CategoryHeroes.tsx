@@ -19,9 +19,9 @@ const categories: CategoryBlock[] = [
   {
     title: 'YOGA FACIAL',
     description: 'Descubre nuestro método exclusivo de rejuvenecimiento facial natural.',
-    image: '/images/services/yoga-facial.webp',
+    image: '/images/services/masaje-tratamiento.webp',
     cta: '¡Descúbrelo!',
-    href: '/#tratamientos',
+    href: '/servicios/',
     align: 'left',
   },
   {
@@ -29,13 +29,13 @@ const categories: CategoryBlock[] = [
     description: 'Descubre la medicina estética más natural y personalizada.',
     image: '/images/services/inyeccion-facial.webp',
     cta: 'Ver tratamientos',
-    href: '/#tratamientos',
+    href: '/servicios/',
     align: 'center',
   },
   {
     title: 'FORMACIÓN',
     description: 'Conviértete en instructora certificada de yoga facial.',
-    image: '/images/services/masaje-tratamiento.webp',
+    image: '/images/gallery/recepcion-logo.webp',
     cta: 'Más información',
     href: '/servicios/',
     align: 'left',

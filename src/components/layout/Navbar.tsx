@@ -55,7 +55,7 @@ export function Navbar() {
         {/* Center: logo */}
         <a href="/" className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center">
           {config.logo ? (
-            <img src={config.logo} alt={config.name} className="h-8 md:h-9 w-auto" />
+            <img src={config.logo} alt={config.name} className="h-10 md:h-11 w-auto" />
           ) : (
             <span className="font-display text-2xl md:text-3xl font-light tracking-wider uppercase text-secondary">
               {config.name}

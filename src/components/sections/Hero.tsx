@@ -8,11 +8,11 @@ export function Hero() {
       {/* Background image */}
       <div className="absolute inset-0 bg-secondary">
         <img
-          src="/images/gallery/recepcion-curated.webp"
+          src="/images/services/yoga-facial.webp"
           alt={config.name}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/30" />
       </div>
 
       {/* Content */}
