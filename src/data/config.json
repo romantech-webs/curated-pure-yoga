@@ -48,10 +48,10 @@
   "name": "Curated",
   "team": [
     {
-      "bio": "Médico especialista en medicina estética con más de 10 años de experiencia, pionera en integrar yoga facial con tratamientos médicos. Formadora certificada apasionada por la belleza natural y el bienestar integral.",
-      "name": "Ana Cristina",
+      "bio": "Especialista en medicina estética y yoga facial con más de 10 años de experiencia, pionera en integrar ambas disciplinas. Formadora certificada apasionada por la belleza natural y el bienestar integral.",
+      "name": "María Aranzazu Carril",
       "role": "Fundadora y Directora Médica",
-      "image": "/images/team/maria-aranzazu.webp"
+      "image": "/images/team/ana-cristina.webp"
     }
   ],
   "email": "",
@@ -238,7 +238,7 @@
     "faqLabel": "Preguntas Frecuentes",
     "faqTitle": "Resolvemos Tus Dudas",
     "teamLabel": "Conoce a la Fundadora",
-    "teamTitle": "Ana Cristina",
+    "teamTitle": "María Aranzazu Carril",
     "whyUsLabel": "Por Qué Curated",
     "whyUsTitle": "Lo Que Nos Hace Diferentes",
     "galleryLabel": "Galería",

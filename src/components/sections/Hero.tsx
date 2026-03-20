@@ -8,9 +8,9 @@ export function Hero() {
       {/* Background image */}
       <div className="absolute inset-0 bg-secondary">
         <img
-          src="/images/services/yoga-facial.webp"
+          src="/images/hero-editorial.webp"
           alt={config.name}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-black/30" />
       </div>
