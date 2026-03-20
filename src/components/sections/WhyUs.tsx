@@ -1,40 +1,61 @@
-'use client'
+import { Check } from 'lucide-react'
 
-import { config } from '@/lib/config'
-import { SectionHeader } from '@/components/ui/SectionHeader'
-import { getIcon } from '@/lib/icons'
-import { motion } from 'framer-motion'
+const reasons = [
+  'Método propio que combina yoga facial y medicina estética',
+  'Experiencia médica certificada y enfoque holístico',
+  'Resultados naturales y armoniosos, sin sobrecorrecciones',
+  'Primera consulta personalizada gratuita',
+]
 
 export function WhyUs() {
   return (
-    <section className="py-20 md:py-28 bg-neutral">
+    <section className="py-16 md:py-24 bg-white">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <SectionHeader
-          label={config.sectionCopy.whyUsLabel}
-          title={config.sectionCopy.whyUsTitle}
-          description={config.sectionCopy.whyUsDescription}
-        />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
+          {/* Text */}
+          <div>
+            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-light text-secondary tracking-wide">
+              MEDICINA ESTÉTICA
+            </h2>
+            <p className="mt-4 text-sm text-muted leading-relaxed">
+              Descubre la medicina estética más natural y personalizada.
+              Protocolos exclusivos, resultados visibles y un enfoque ético
+              basado en el cuidado real de tu piel.
+            </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {config.whyUs.map((item, i) => {
-            const Icon = getIcon(item.icon)
-            return (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-50px' }}
-                transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="text-center"
+            <div className="mt-8">
+              <p className="text-sm font-medium text-secondary">
+                ¿Por qué elegir Curated?
+              </p>
+              <ul className="mt-4 space-y-3">
+                {reasons.map((reason) => (
+                  <li key={reason} className="flex items-start gap-3">
+                    <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
+                    <span className="text-sm text-muted leading-relaxed">{reason}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="mt-8">
+              <a
+                href="/servicios/"
+                className="inline-block border border-secondary text-secondary text-xs tracking-widest uppercase px-8 py-3.5 hover:bg-secondary hover:text-white transition-all duration-300"
               >
-                <div className="w-14 h-14 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center mb-5">
-                  <Icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-base font-medium text-secondary">{item.title}</h3>
-                <p className="mt-3 text-sm text-muted leading-relaxed">{item.description}</p>
-              </motion.div>
-            )
-          })}
+                Conoce nuestros tratamientos
+              </a>
+            </div>
+          </div>
+
+          {/* Image */}
+          <div className="overflow-hidden">
+            <img
+              src="/images/services/medicina-estetica.webp"
+              alt="Medicina estética"
+              className="w-full h-[350px] md:h-[450px] object-cover"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </section>

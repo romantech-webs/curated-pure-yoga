@@ -5,7 +5,7 @@ const PROJECT_ID = 'wp_8e2c4541-0dfc-42b9-b95f-6ad765d7b2ba'
 
 export async function fetchProducts(): Promise<StoreData> {
   const res = await fetch(`${API_BASE}/api/products/public/${PROJECT_ID}`)
-  if (!res.ok) throw new Error('No se pudieron cargar los productos')
+  if (!res.ok) return { products: [], categories: [], whatsapp: { number: '', template: '' } }
   return res.json()
 }
 

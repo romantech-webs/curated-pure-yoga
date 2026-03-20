@@ -4,7 +4,7 @@ import { config } from '@/lib/config'
 
 export function Hero() {
   return (
-    <section className="relative h-[85vh] md:h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative h-[45vh] md:h-[55vh] flex items-center overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 bg-secondary">
         <img
@@ -16,23 +16,24 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-5 animate-fade-up">
-        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white leading-tight tracking-wide">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-8 md:px-16">
+        <p className="text-xs tracking-[0.3em] uppercase text-white/70 mb-3">
+          {config.specialty}
+        </p>
+        <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-light text-white leading-tight tracking-wide italic">
           {config.heroHeadline[0]}
           <br />
-          <span className="italic">{config.heroHeadline[1]}</span>
+          {config.heroHeadline[1]}
         </h1>
-
-        <p className="mt-6 text-sm md:text-base text-white/80 max-w-lg mx-auto leading-relaxed">
+        <p className="mt-4 text-sm text-white/70 max-w-md leading-relaxed">
           {config.heroDescription}
         </p>
-
-        <div className="mt-10">
+        <div className="mt-8">
           <a
             href="/#tratamientos"
-            className="inline-block bg-secondary text-white text-xs tracking-widest uppercase px-10 py-4 hover:bg-secondary/80 transition-colors duration-300"
+            className="inline-block border border-white text-white text-xs tracking-widest uppercase px-8 py-3.5 hover:bg-white hover:text-secondary transition-all duration-300"
           >
-            Conoce nuestros tratamientos
+            Descubrir
           </a>
         </div>
       </div>
