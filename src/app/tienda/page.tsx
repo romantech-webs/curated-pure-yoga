@@ -11,7 +11,6 @@ export default function TiendaPage() {
   const [products, setProducts] = useState<Product[]>([])
   const [categories, setCategories] = useState<Category[]>([])
   const [loading, setLoading] = useState(true)
-  const [error, setError] = useState('')
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
 
@@ -21,7 +20,7 @@ export default function TiendaPage() {
         setProducts(data.products)
         setCategories(data.categories)
       })
-      .catch((err) => setError(err.message))
+      .catch(() => {})
       .finally(() => setLoading(false))
   }, [])
 
@@ -56,16 +55,6 @@ export default function TiendaPage() {
                 <div className="mt-3 h-4 bg-neutral w-1/4 mx-auto" />
               </div>
             ))}
-          </div>
-        ) : error ? (
-          <div className="text-center py-16">
-            <p className="text-muted">{error}</p>
-            <button
-              onClick={() => window.location.reload()}
-              className="mt-4 border border-secondary text-secondary text-xs tracking-widest uppercase px-8 py-3 hover:bg-secondary hover:text-white transition-all duration-300"
-            >
-              Reintentar
-            </button>
           </div>
         ) : products.length === 0 ? (
           <div className="text-center py-16">
