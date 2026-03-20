@@ -11,7 +11,17 @@ export function WhyUs() {
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
+          {/* Image — shown first on mobile */}
+          <div className="overflow-hidden lg:hidden">
+            <img
+              src="/images/services/medicina-estetica.webp"
+              alt="Medicina estética"
+              className="w-full h-[250px] object-cover"
+              loading="lazy"
+            />
+          </div>
+
           {/* Text */}
           <div>
             <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-light text-secondary tracking-wide">
@@ -47,12 +57,12 @@ export function WhyUs() {
             </div>
           </div>
 
-          {/* Image */}
-          <div className="overflow-hidden">
+          {/* Image — desktop only (mobile shown above) */}
+          <div className="hidden lg:block overflow-hidden">
             <img
               src="/images/services/medicina-estetica.webp"
               alt="Medicina estética"
-              className="w-full h-[350px] md:h-[450px] object-cover"
+              className="w-full h-[450px] object-cover"
               loading="lazy"
             />
           </div>

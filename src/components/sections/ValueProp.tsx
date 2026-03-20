@@ -2,7 +2,7 @@ import { config } from '@/lib/config'
 
 export function ValueProp() {
   return (
-    <section className="py-16 md:py-24 bg-neutral">
+    <section className="py-12 md:py-24 bg-neutral">
       <div className="mx-auto max-w-3xl px-5 md:px-8 text-center">
         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-light text-secondary tracking-wide leading-snug">
           TU PIEL ES ÚNICA Y MERECE UN CUIDADO INTEGRAL

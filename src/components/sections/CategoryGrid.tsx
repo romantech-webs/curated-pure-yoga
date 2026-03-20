@@ -46,36 +46,65 @@ const categories: CategoryCard[] = [
 
 export function CategoryGrid() {
   return (
-    <section id="tratamientos" className="py-16 md:py-24 bg-white">
+    <section id="tratamientos" className="py-12 md:py-24 bg-white">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-5">
+        {/* Mobile: scroll horizontal. Desktop: grid */}
+        <div className="hidden md:grid md:grid-cols-3 gap-5">
           {categories.map((cat, i) => (
             <a
               key={cat.title}
               href={cat.href}
               className={`group relative overflow-hidden ${
-                i === 0 ? 'row-span-2 aspect-auto min-h-[320px] md:min-h-[440px]' : 'aspect-[4/3]'
+                i === 0 ? 'row-span-2 min-h-[440px]' : 'aspect-[4/3]'
               }`}
             >
-              {/* Image */}
               <img
                 src={cat.image}
                 alt={cat.title}
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />
-              {/* Overlay */}
               <div className="absolute inset-0 bg-black/35 group-hover:bg-black/45 transition-colors duration-300" />
-
-              {/* Content */}
-              <div className="relative z-10 h-full flex flex-col justify-end p-4 md:p-6">
-                <h3 className="font-display text-lg md:text-xl font-medium text-white tracking-wider">
+              <div className="relative z-10 h-full flex flex-col justify-end p-6">
+                <h3 className="font-display text-xl font-medium text-white tracking-wider">
                   {cat.title}
                 </h3>
-                <p className="mt-1 text-xs text-white/70 leading-relaxed hidden sm:block">
+                <p className="mt-1 text-xs text-white/70 leading-relaxed">
                   {cat.description}
                 </p>
-                <span className="mt-3 inline-block text-[10px] md:text-xs tracking-widest uppercase text-white border-b border-white/50 pb-0.5 self-start group-hover:border-white transition-colors">
+                <span className="mt-3 inline-block text-xs tracking-widest uppercase text-white border-b border-white/50 pb-0.5 self-start group-hover:border-white transition-colors">
+                  {cat.cta}
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        {/* Mobile: horizontal scroll */}
+        <div className="flex md:hidden gap-3 overflow-x-auto snap-x snap-mandatory pb-4 -mx-5 px-5"
+          style={{ scrollbarWidth: 'none' }}
+        >
+          {categories.map((cat) => (
+            <a
+              key={cat.title}
+              href={cat.href}
+              className="group relative shrink-0 w-[70vw] aspect-[3/4] snap-start overflow-hidden"
+            >
+              <img
+                src={cat.image}
+                alt={cat.title}
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-black/40" />
+              <div className="relative z-10 h-full flex flex-col justify-end p-5">
+                <h3 className="font-display text-xl font-medium text-white tracking-wider">
+                  {cat.title}
+                </h3>
+                <p className="mt-1 text-xs text-white/70 leading-relaxed">
+                  {cat.description}
+                </p>
+                <span className="mt-3 inline-block text-[10px] tracking-widest uppercase text-white border-b border-white/50 pb-0.5 self-start">
                   {cat.cta}
                 </span>
               </div>
