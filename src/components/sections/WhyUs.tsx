@@ -1,10 +1,11 @@
 import { Check } from 'lucide-react'
 
 const reasons = [
+  'Atención médica experta y cercana',
+  'Enfoque ético, sin sobrecorrecciones',
+  'Resultados visibles, naturales y armoniosos',
   'Método propio que combina yoga facial y medicina estética',
-  'Experiencia médica certificada y enfoque holístico',
-  'Resultados naturales y armoniosos, sin sobrecorrecciones',
-  'Primera consulta personalizada gratuita',
+  'Primera consulta totalmente gratuita',
 ]
 
 export function WhyUs() {

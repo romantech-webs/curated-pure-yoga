@@ -9,38 +9,38 @@ interface CategoryCard {
 const categories: CategoryCard[] = [
   {
     title: 'TRATAMIENTOS',
-    description: 'Yoga facial, kinesiotape y medicina estética.',
+    description: 'Facial, corporal y relax. Descubre cuál es el mejor tratamiento para ti.',
     image: '/images/services/yoga-facial-jade.webp',
-    cta: 'Descúbrelos',
-    href: '/servicios/',
-  },
-  {
-    title: 'TIENDA',
-    description: 'Bonos, tratamientos y packs al mejor precio.',
-    image: '/images/services/masaje-tratamiento.webp',
-    cta: 'Haz tu compra',
-    href: '/tienda/',
-  },
-  {
-    title: 'MEDICINA ESTÉTICA',
-    description: 'Botox, ácido hialurónico y más.',
-    image: '/images/services/medicina-estetica.webp',
-    cta: 'Ver tratamientos',
-    href: '/servicios/',
-  },
-  {
-    title: 'FORMACIÓN',
-    description: 'Certifícate como instructora de yoga facial.',
-    image: '/images/gallery/brand-wall.webp',
-    cta: 'Más información',
+    cta: '¡Descúbrelos!',
     href: '/servicios/',
   },
   {
     title: 'RESERVAS',
-    description: 'Agenda tu cita y disfruta de la mejor experiencia.',
+    description: 'Agenda una cita para disfrutar de la mejor experiencia.',
     image: '/images/gallery/sala-tratamiento.webp',
-    cta: 'Reserva',
+    cta: '¡Reserva!',
     href: '/contacto/',
+  },
+  {
+    title: 'TIENDA',
+    description: 'Compra cualquiera de nuestros productos y recíbelos en casa.',
+    image: '/images/services/masaje-tratamiento.webp',
+    cta: '¡Haz tu compra!',
+    href: '/tienda/',
+  },
+  {
+    title: 'NOVIAS',
+    description: 'Los mejores tratamientos de belleza para novias, madrinas e invitadas.',
+    image: '/images/services/medicina-estetica.webp',
+    cta: '¡Descúbrelo!',
+    href: '/servicios/',
+  },
+  {
+    title: 'FORMACIÓN',
+    description: 'Conviértete en instructora certificada de yoga facial.',
+    image: '/images/gallery/brand-wall.webp',
+    cta: 'Más información',
+    href: '/servicios/',
   },
 ]
 
@@ -48,7 +48,7 @@ export function CategoryGrid() {
   return (
     <section id="tratamientos" className="py-12 md:py-24 bg-white">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        {/* Mobile: scroll horizontal. Desktop: grid */}
+        {/* Desktop: grid layout */}
         <div className="hidden md:grid md:grid-cols-3 gap-5">
           {categories.map((cat, i) => (
             <a
@@ -80,15 +80,13 @@ export function CategoryGrid() {
           ))}
         </div>
 
-        {/* Mobile: horizontal scroll */}
-        <div className="flex md:hidden gap-3 overflow-x-auto snap-x snap-mandatory pb-4 -mx-5 px-5"
-          style={{ scrollbarWidth: 'none' }}
-        >
+        {/* Mobile: full-width stacked blocks */}
+        <div className="flex flex-col md:hidden gap-4">
           {categories.map((cat) => (
             <a
               key={cat.title}
               href={cat.href}
-              className="group relative shrink-0 w-[70vw] aspect-[3/4] snap-start overflow-hidden"
+              className="group relative overflow-hidden h-[220px]"
             >
               <img
                 src={cat.image}
@@ -97,16 +95,18 @@ export function CategoryGrid() {
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-black/40" />
-              <div className="relative z-10 h-full flex flex-col justify-end p-5">
-                <h3 className="font-display text-xl font-medium text-white tracking-wider">
+              <div className="relative z-10 h-full flex flex-col justify-center px-6">
+                <h3 className="font-display text-2xl font-medium text-white tracking-wider">
                   {cat.title}
                 </h3>
-                <p className="mt-1 text-xs text-white/70 leading-relaxed">
+                <p className="mt-2 text-sm text-white/80 leading-relaxed max-w-xs">
                   {cat.description}
                 </p>
-                <span className="mt-3 inline-block text-[10px] tracking-widest uppercase text-white border-b border-white/50 pb-0.5 self-start">
-                  {cat.cta}
-                </span>
+                <div className="mt-4">
+                  <span className="inline-block border border-white/70 text-white text-xs tracking-widest uppercase px-6 py-2.5">
+                    {cat.cta}
+                  </span>
+                </div>
               </div>
             </a>
           ))}
