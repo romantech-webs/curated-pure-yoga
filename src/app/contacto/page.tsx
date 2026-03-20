@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Contact } from '@/components/sections/Contact'
-import { CTA } from '@/components/sections/CTA'
 
 export const metadata: Metadata = {
   title: 'Contacto',
@@ -10,7 +9,6 @@ export const metadata: Metadata = {
 export default function ContactoPage() {
   return (
     <div className="pt-20">
-      <CTA />
       <Contact />
     </div>
   )

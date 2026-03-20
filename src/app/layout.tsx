@@ -1,16 +1,24 @@
 import type { Metadata } from 'next'
-import { DM_Sans } from 'next/font/google'
+import { DM_Sans, Cormorant_Garamond } from 'next/font/google'
 import { config } from '@/lib/config'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 import { CartProvider } from '@/components/store/CartProvider'
 import { CartDrawer } from '@/components/store/CartDrawer'
+import { WhatsAppFloat } from '@/components/layout/WhatsAppFloat'
 import './globals.css'
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-sans',
+})
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600'],
+  display: 'swap',
+  variable: '--font-display',
 })
 
 export const metadata: Metadata = {
@@ -75,7 +83,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   }
 
   return (
-    <html lang="es" className={dmSans.variable}>
+    <html lang="es" className={`${dmSans.variable} ${cormorant.variable}`}>
       <head>
         <script
           type="application/ld+json"
@@ -88,6 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main>{children}</main>
           <Footer />
           <CartDrawer />
+          <WhatsAppFloat />
         </CartProvider>
       </body>
     </html>

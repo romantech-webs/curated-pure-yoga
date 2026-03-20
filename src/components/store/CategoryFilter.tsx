@@ -12,13 +12,13 @@ export function CategoryFilter({ categories, active, onChange }: CategoryFilterP
   if (categories.length <= 1) return null
 
   return (
-    <div className="flex flex-wrap gap-2 justify-center mb-10 md:mb-14">
+    <div className="flex flex-wrap gap-3 justify-center mb-10 md:mb-14">
       <button
         onClick={() => onChange(null)}
-        className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+        className={`px-6 py-2.5 text-xs tracking-widest uppercase transition-all duration-200 ${
           active === null
-            ? 'bg-primary text-white shadow-sm'
-            : 'bg-neutral text-muted hover:text-secondary hover:bg-neutral-dark'
+            ? 'bg-secondary text-white'
+            : 'border border-neutral-dark text-muted hover:text-secondary hover:border-secondary'
         }`}
       >
         Todos
@@ -27,10 +27,10 @@ export function CategoryFilter({ categories, active, onChange }: CategoryFilterP
         <button
           key={cat.id}
           onClick={() => onChange(cat.id)}
-          className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+          className={`px-6 py-2.5 text-xs tracking-widest uppercase transition-all duration-200 ${
             active === cat.id
-              ? 'bg-primary text-white shadow-sm'
-              : 'bg-neutral text-muted hover:text-secondary hover:bg-neutral-dark'
+              ? 'bg-secondary text-white'
+              : 'border border-neutral-dark text-muted hover:text-secondary hover:border-secondary'
           }`}
         >
           {cat.name}

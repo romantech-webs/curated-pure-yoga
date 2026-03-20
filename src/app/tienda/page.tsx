@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { SectionHeader } from '@/components/ui/SectionHeader'
 import { CategoryFilter } from '@/components/store/CategoryFilter'
 import { ProductCard } from '@/components/store/ProductCard'
 import { ProductModal } from '@/components/store/ProductModal'
@@ -37,20 +36,24 @@ export default function TiendaPage() {
   return (
     <section className="pt-28 pb-20 md:pt-36 md:pb-28 min-h-screen">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <SectionHeader
-          label="Tienda"
-          title="Nuestros Productos"
-          description="Cosmetica y productos de cuidado seleccionados por nuestras especialistas. Compra online y recoge en centro."
-        />
+        {/* Header — mimotbeauty style */}
+        <div className="text-center mb-12">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-light text-secondary tracking-wide">
+            NUESTRA TIENDA
+          </h1>
+          <p className="mt-4 text-sm text-muted max-w-md mx-auto leading-relaxed">
+            Bonos, tratamientos y packs seleccionados por nuestras especialistas. Compra online y recoge en centro.
+          </p>
+        </div>
 
         {loading ? (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
             {Array.from({ length: 8 }).map((_, i) => (
               <div key={i} className="animate-pulse">
-                <div className="aspect-square bg-neutral rounded-2xl" />
-                <div className="mt-3 h-3 bg-neutral rounded-full w-1/3" />
-                <div className="mt-2 h-4 bg-neutral rounded-full w-2/3" />
-                <div className="mt-3 h-4 bg-neutral rounded-full w-1/4" />
+                <div className="aspect-square bg-neutral" />
+                <div className="mt-3 h-3 bg-neutral w-1/3 mx-auto" />
+                <div className="mt-2 h-4 bg-neutral w-2/3 mx-auto" />
+                <div className="mt-3 h-4 bg-neutral w-1/4 mx-auto" />
               </div>
             ))}
           </div>
@@ -59,7 +62,7 @@ export default function TiendaPage() {
             <p className="text-muted">{error}</p>
             <button
               onClick={() => window.location.reload()}
-              className="mt-4 px-6 py-2.5 bg-primary text-white rounded-xl text-sm font-medium hover:bg-primary-dark transition-colors"
+              className="mt-4 border border-secondary text-secondary text-xs tracking-widest uppercase px-8 py-3 hover:bg-secondary hover:text-white transition-all duration-300"
             >
               Reintentar
             </button>
@@ -67,7 +70,7 @@ export default function TiendaPage() {
         ) : products.length === 0 ? (
           <div className="text-center py-16">
             <p className="text-muted text-lg">Proximamente...</p>
-            <p className="text-sm text-muted mt-2">Estamos preparando nuestro catalogo de productos</p>
+            <p className="text-sm text-muted mt-2">Estamos preparando nuestro catálogo de productos</p>
           </div>
         ) : (
           <>
@@ -77,7 +80,7 @@ export default function TiendaPage() {
               onChange={setActiveCategory}
             />
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
               {sorted.map((product, i) => (
                 <ProductCard
                   key={product.id}
@@ -90,7 +93,7 @@ export default function TiendaPage() {
 
             {sorted.length === 0 && (
               <p className="text-center text-muted py-12">
-                No hay productos en esta categoria
+                No hay productos en esta categoría
               </p>
             )}
           </>

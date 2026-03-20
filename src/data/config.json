@@ -51,7 +51,7 @@
       "bio": "Médico especialista en medicina estética con más de 10 años de experiencia, pionera en integrar yoga facial con tratamientos médicos. Formadora certificada apasionada por la belleza natural y el bienestar integral.",
       "name": "Ana Cristina",
       "role": "Fundadora y Directora Médica",
-      "image": "/images/team/member-0.webp"
+      "image": "/images/team/maria-aranzazu.webp"
     }
   ],
   "email": "",
@@ -103,14 +103,14 @@
     "postalCode": "48009"
   },
   "gallery": [
-    { "alt": "Curated - Centro de medicina estética en Bilbao", "src": "/images/gallery/photo-0.webp" },
-    { "alt": "Curated - Tratamientos de belleza natural", "src": "/images/gallery/photo-1.webp" },
-    { "alt": "Curated - Espacio de bienestar", "src": "/images/gallery/photo-2.webp" },
-    { "alt": "Curated - Yoga facial y medicina estética", "src": "/images/gallery/photo-3.webp" },
-    { "alt": "Curated - Ambiente exclusivo", "src": "/images/gallery/photo-4.webp" },
-    { "alt": "Curated - Consulta personalizada", "src": "/images/gallery/photo-5.webp" },
-    { "alt": "Curated - Resultados naturales", "src": "/images/gallery/photo-6.webp" },
-    { "alt": "Curated - Formación profesional", "src": "/images/gallery/photo-7.webp" }
+    { "alt": "Curated - Recepción del centro", "src": "/images/gallery/recepcion-curated.webp" },
+    { "alt": "Curated - Recepción con logo", "src": "/images/gallery/recepcion-logo.webp" },
+    { "alt": "Curated - Sala de tratamiento", "src": "/images/gallery/sala-tratamiento.webp" },
+    { "alt": "Curated - Sala de espera", "src": "/images/gallery/sala-espera.webp" },
+    { "alt": "Curated - Entrada a servicios", "src": "/images/gallery/entrada-servicios.webp" },
+    { "alt": "Curated - Pasillo interior", "src": "/images/gallery/pasillo-interior.webp" },
+    { "alt": "Curated - Vitrina de productos", "src": "/images/gallery/pasillo-vitrina.webp" },
+    { "alt": "Curated - Jade roller", "src": "/images/gallery/jade-roller.webp" }
   ],
   "process": [
     {

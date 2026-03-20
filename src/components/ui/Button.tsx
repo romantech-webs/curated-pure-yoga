@@ -10,17 +10,17 @@ export function Button({ variant = 'primary', size = 'md', className, children, 
   return (
     <a
       className={cn(
-        'inline-flex items-center justify-center font-medium rounded-xl transition-all duration-300 cursor-pointer',
+        'inline-flex items-center justify-center tracking-widest uppercase transition-all duration-300 cursor-pointer',
         {
-          'bg-primary text-white hover:bg-primary-dark shadow-sm hover:shadow-md': variant === 'primary',
-          'bg-secondary text-white hover:bg-secondary/90': variant === 'secondary',
-          'border-2 border-primary text-primary hover:bg-primary hover:text-white': variant === 'outline',
-          'text-primary hover:text-primary-dark hover:bg-primary/5': variant === 'ghost',
+          'bg-secondary text-white hover:bg-secondary/80': variant === 'primary',
+          'bg-accent text-white hover:bg-accent-light': variant === 'secondary',
+          'border border-secondary text-secondary hover:bg-secondary hover:text-white': variant === 'outline',
+          'text-secondary hover:text-muted': variant === 'ghost',
         },
         {
-          'px-5 py-2.5 text-sm': size === 'sm',
-          'px-7 py-3 text-sm': size === 'md',
-          'px-9 py-4 text-base': size === 'lg',
+          'px-6 py-2.5 text-xs': size === 'sm',
+          'px-8 py-3 text-xs': size === 'md',
+          'px-10 py-4 text-xs': size === 'lg',
         },
         className
       )}
