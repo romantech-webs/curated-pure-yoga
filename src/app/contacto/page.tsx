@@ -3,7 +3,10 @@ import { Contact } from '@/components/sections/Contact'
 
 export const metadata: Metadata = {
   title: 'Contacto',
-  description: 'Visítanos en nuestro centro de Bilbao. Horario, dirección y cómo contactarnos.',
+  description: 'Visítanos en nuestro centro de medicina estética en Bilbao. Dirección, horario y cómo contactarnos.',
+  alternates: {
+    canonical: 'https://curatedbyac.com/contacto/',
+  },
 }
 
 export default function ContactoPage() {

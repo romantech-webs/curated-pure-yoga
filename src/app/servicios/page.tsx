@@ -1,12 +1,28 @@
 import type { Metadata } from 'next'
-import { config } from '@/lib/config'
+import { createBreadcrumbSchema } from '@/lib/schemas'
 import { ServicesDetail } from './services-detail'
 
 export const metadata: Metadata = {
-  title: 'Servicios',
-  description: `Servicios de ${config.name}: ${config.services.map(s => s.name).join(', ')}.`,
+  title: 'Tratamientos de Medicina Estética y Yoga Facial',
+  description: 'Descubre todos los tratamientos de Curated by AC en Bilbao: yoga facial, kinesiotape facial, botox, ácido hialurónico y más. Resultados naturales y personalizados.',
+  alternates: {
+    canonical: 'https://curatedbyac.com/servicios/',
+  },
 }
 
 export default function ServiciosPage() {
-  return <ServicesDetail />
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: 'Inicio', url: '/' },
+    { name: 'Tratamientos', url: '/servicios/' },
+  ])
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <ServicesDetail />
+    </>
+  )
 }

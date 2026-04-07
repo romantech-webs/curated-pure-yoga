@@ -45,7 +45,7 @@
     "defaultDescription": "Centro de medicina estética y yoga facial en Bilbao. Tratamientos personalizados, formación profesional y certificación de instructores. Belleza natural con resultados visibles."
   },
   "logo": "/images/logo.png",
-  "name": "Curated",
+  "name": "Curated by AC",
   "team": [
     {
       "bio": "Especialista en medicina estética y yoga facial con más de 10 años de experiencia, pionera en integrar ambas disciplinas. Formadora certificada apasionada por la belleza natural y el bienestar integral.",
@@ -182,49 +182,152 @@
       "icon": "Sparkles",
       "name": "Yoga Facial",
       "benefits": ["Tonificación muscular natural", "Reducción de arrugas", "Mejora de la elasticidad"],
-      "description": "Nuestro método exclusivo combina ejercicios faciales específicos con técnicas de respiración y relajación. Tonifica músculos, mejora la circulación y reduce signos de envejecimiento de forma natural."
+      "description": "Nuestro método exclusivo combina ejercicios faciales específicos con técnicas de respiración y relajación. Tonifica músculos, mejora la circulación y reduce signos de envejecimiento de forma natural.",
+      "longDescription": "El yoga facial es una disciplina que trabaja los más de 50 músculos del rostro y cuello mediante ejercicios específicos, técnicas de respiración controlada y masaje facial profundo. En Curated by AC hemos desarrollado un método propio que integra lo mejor de la gimnasia facial con principios de la medicina estética para obtener resultados visibles y duraderos.\n\nNuestras sesiones de yoga facial en Bilbao están diseñadas para tonificar y fortalecer la musculatura facial, mejorar la circulación sanguínea y linfática, estimular la producción natural de colágeno y elastina, y reducir las líneas de expresión de forma progresiva.\n\nCada sesión dura aproximadamente 45 minutos e incluye un diagnóstico facial personalizado, ejercicios adaptados a tus necesidades específicas y técnicas de automasaje que podrás practicar en casa. Los primeros cambios se notan desde las primeras semanas: mejor tono, más luminosidad y relajación de tensiones acumuladas. Los resultados más visibles en firmeza y reducción de arrugas aparecen entre las 6 y 12 semanas de práctica regular.\n\nEste tratamiento es ideal para quienes buscan una alternativa natural al envejecimiento facial, o como complemento perfecto a tratamientos de medicina estética como el botox o el ácido hialurónico.",
+      "metaTitle": "Yoga Facial en Bilbao | Método Exclusivo",
+      "metaDescription": "Sesiones de yoga facial personalizadas en Bilbao. Método propio que tonifica, rejuvenece y reduce arrugas de forma natural. Resultados visibles desde las primeras semanas.",
+      "faq": [
+        {
+          "question": "¿Cuántas sesiones de yoga facial necesito para ver resultados?",
+          "answer": "Los primeros cambios (mejor tono, luminosidad) se notan desde las primeras sesiones. Para resultados visibles en firmeza y reducción de líneas, recomendamos un mínimo de 8-12 sesiones con práctica regular en casa."
+        },
+        {
+          "question": "¿Puedo combinar el yoga facial con botox?",
+          "answer": "Sí, de hecho es nuestra especialidad. El yoga facial prepara y mantiene los tejidos faciales, potenciando y prolongando los efectos del botox y otros tratamientos médico-estéticos."
+        },
+        {
+          "question": "¿Es apto para cualquier edad?",
+          "answer": "Absolutamente. El yoga facial se adapta a cada persona y edad. A partir de los 25 años es ideal como prevención, y en pieles maduras ayuda a tonificar y mejorar la firmeza de forma notable."
+        }
+      ]
     },
     {
       "id": "kinesiotape-facial",
       "icon": "Leaf",
       "name": "Kinesiotape Facial",
       "benefits": ["Drenaje linfático", "Lifting natural", "Relajación muscular"],
-      "description": "Técnica innovadora que utiliza vendas especiales para estimular la circulación, drenar líquidos y tonificar los músculos faciales. Complemento perfecto al yoga facial."
+      "description": "Técnica innovadora que utiliza vendas especiales para estimular la circulación, drenar líquidos y tonificar los músculos faciales. Complemento perfecto al yoga facial.",
+      "longDescription": "El kinesiotape facial es una técnica avanzada que utiliza vendas elásticas especiales aplicadas estratégicamente sobre los músculos y tejidos del rostro. Estas vendas biomecánicas generan un efecto lifting natural al activar la circulación, facilitar el drenaje linfático y estimular la musculatura facial desde la primera aplicación.\n\nEn Curated by AC aplicamos el kinesiotape facial como parte de nuestro enfoque integral de belleza. Cada sesión en nuestro centro de Bilbao comienza con un análisis facial para identificar las zonas que más se beneficiarán del tratamiento: pómulos, contorno de ojos, mandíbula, frente o cuello.\n\nLos beneficios incluyen reducción inmediata de la hinchazón facial, efecto lifting visible desde la primera sesión, mejora del tono muscular y la textura de la piel, y alivio de tensiones acumuladas en la mandíbula y zona temporal.\n\nEl kinesiotape se complementa perfectamente con nuestras sesiones de yoga facial, potenciando los resultados de ambas técnicas. También es ideal como preparación previa a eventos importantes, ya que sus efectos son inmediatos y la aplicación es completamente indolora.",
+      "metaTitle": "Kinesiotape Facial en Bilbao | Lifting Natural",
+      "metaDescription": "Tratamiento de kinesiotape facial en Bilbao. Lifting natural, drenaje linfático y tonificación muscular desde la primera sesión. Centro especializado Curated by AC.",
+      "faq": [
+        {
+          "question": "¿Cuánto dura el efecto del kinesiotape facial?",
+          "answer": "El efecto inmediato del kinesiotape dura entre 2 y 5 días dependiendo de la zona tratada. Con sesiones regulares, los resultados se mantienen y mejoran progresivamente."
+        },
+        {
+          "question": "¿Es doloroso el kinesiotape facial?",
+          "answer": "No, es completamente indoloro. Las vendas son hipoalergénicas y se aplican con suavidad. La mayoría de nuestras clientas lo describen como una experiencia relajante."
+        }
+      ]
     },
     {
       "id": "formacion-yoga-facial",
       "icon": "GraduationCap",
       "name": "Formación en Yoga Facial",
       "benefits": ["Conocimiento especializado", "Práctica guiada", "Material didáctico completo"],
-      "description": "Cursos presenciales donde aprenderás las bases del yoga facial, anatomía aplicada y técnicas específicas. Ideal para uso personal o profesional."
+      "description": "Cursos presenciales donde aprenderás las bases del yoga facial, anatomía aplicada y técnicas específicas. Ideal para uso personal o profesional.",
+      "longDescription": "Nuestra formación en yoga facial está diseñada para quienes desean profundizar en esta disciplina, ya sea para uso personal o como salida profesional. Los cursos se imparten de forma presencial en nuestro centro de Bilbao, con grupos reducidos que garantizan una atención personalizada.\n\nEl programa formativo incluye anatomía facial aplicada con conocimiento detallado de los músculos y estructuras del rostro, técnicas de ejercicios faciales progresivos para cada zona del rostro, protocolos de automasaje y estimulación facial, y fundamentos de respiración y relajación orientados al bienestar facial.\n\nNuestros cursos están respaldados por la experiencia médica de nuestra fundadora, que aporta un enfoque riguroso y científico a cada técnica enseñada. Todo el contenido se basa en evidencia y en más de 10 años de práctica clínica combinando yoga facial con medicina estética.\n\nAl finalizar el curso recibirás material didáctico completo para continuar tu práctica en casa, acceso a vídeos de seguimiento y certificado de asistencia. No necesitas experiencia previa; solo interés genuino en el bienestar y la belleza natural.",
+      "metaTitle": "Cursos de Yoga Facial en Bilbao | Formación Presencial",
+      "metaDescription": "Cursos presenciales de yoga facial en Bilbao. Aprende anatomía facial, técnicas de ejercicios y automasaje. Grupos reducidos con atención personalizada.",
+      "faq": [
+        {
+          "question": "¿Necesito experiencia previa para el curso?",
+          "answer": "No, nuestros cursos están diseñados desde nivel básico. Solo necesitas interés en el bienestar y la belleza natural. Te guiamos paso a paso."
+        },
+        {
+          "question": "¿Cuánto dura la formación?",
+          "answer": "El curso básico se desarrolla en un fin de semana intensivo. Incluye parte teórica, práctica supervisada y material para seguir practicando en casa."
+        }
+      ]
     },
     {
       "id": "certificacion-instructores",
       "icon": "Award",
       "name": "Certificación de Instructores",
       "benefits": ["Certificación oficial", "Salida profesional", "Metodología exclusiva"],
-      "description": "Programa completo de formación profesional que te certifica como instructor de yoga facial. Incluye metodología, práctica clínica y herramientas de negocio."
+      "description": "Programa completo de formación profesional que te certifica como instructor de yoga facial. Incluye metodología, práctica clínica y herramientas de negocio.",
+      "longDescription": "Nuestro programa de certificación de instructores de yoga facial es el más completo del mercado, diseñado para profesionales de la estética, la salud y el bienestar que desean incorporar esta disciplina a su oferta de servicios.\n\nEl programa se desarrolla en nuestro centro de Bilbao e incluye formación teórica avanzada con anatomía facial, fisiología del envejecimiento y bases científicas del yoga facial, metodología exclusiva de Curated by AC desarrollada a lo largo de más de 10 años de experiencia, práctica clínica supervisada con casos reales, y herramientas de negocio para incorporar el yoga facial a tu actividad profesional.\n\nLo que nos diferencia es que nuestra certificación está respaldada por experiencia médica real. No enseñamos solo ejercicios; formamos profesionales que entienden la biomecánica facial, saben adaptar los protocolos a cada tipo de paciente y pueden integrar el yoga facial con otros tratamientos estéticos.\n\nAl completar el programa recibirás diploma de instructor certificado en yoga facial, manual profesional completo con protocolos, acceso a comunidad de instructores certificados, y seguimiento post-certificación para tu desarrollo profesional.",
+      "metaTitle": "Certificación de Instructores de Yoga Facial | Bilbao",
+      "metaDescription": "Certifícate como instructor de yoga facial con el programa profesional de Curated by AC en Bilbao. Metodología exclusiva, práctica clínica y salida profesional.",
+      "faq": [
+        {
+          "question": "¿Qué titulación necesito para certificarme?",
+          "answer": "No se requiere titulación específica, aunque es recomendable tener formación previa en estética, fisioterapia, enfermería u otra disciplina de salud. Valoramos la experiencia y la motivación."
+        },
+        {
+          "question": "¿Puedo ejercer profesionalmente con esta certificación?",
+          "answer": "Sí. Nuestra certificación te habilita para ofrecer sesiones de yoga facial como profesional. Incluimos herramientas de negocio para que puedas incorporarlo a tu práctica de forma inmediata."
+        }
+      ]
     },
     {
       "id": "botox",
       "icon": "Syringe",
       "name": "Botox",
       "benefits": ["Resultados inmediatos", "Técnica médica", "Aspecto natural"],
-      "description": "Aplicación médica de toxina botulínica para suavizar arrugas de expresión. Realizada con técnica experta para mantener la naturalidad del rostro."
+      "description": "Aplicación médica de toxina botulínica para suavizar arrugas de expresión. Realizada con técnica experta para mantener la naturalidad del rostro.",
+      "longDescription": "El botox (toxina botulínica) es uno de los tratamientos de medicina estética más demandados y efectivos para suavizar las arrugas de expresión. En Curated by AC realizamos la aplicación con técnica médica experta, priorizando siempre un resultado natural que respete la armonía y expresividad de tu rostro.\n\nNuestro enfoque del botox en Bilbao se diferencia porque lo integramos dentro de un plan facial completo. No nos limitamos a inyectar: realizamos un diagnóstico facial previo, evaluamos la musculatura y proponemos un tratamiento personalizado que puede incluir yoga facial como complemento para mantener y potenciar los resultados.\n\nLas zonas más habituales de aplicación son las arrugas de la frente, el entrecejo, las patas de gallo y las líneas de la nariz. El procedimiento dura entre 15 y 30 minutos, no requiere anestesia y puedes retomar tu actividad normal inmediatamente.\n\nLos resultados comienzan a ser visibles a partir del tercer día y alcanzan su máximo efecto en 10-14 días. La duración del efecto es de 4 a 6 meses, y con sesiones regulares los intervalos entre tratamientos pueden alargarse progresivamente.",
+      "metaTitle": "Botox en Bilbao | Medicina Estética Natural",
+      "metaDescription": "Tratamiento de botox en Bilbao con técnica médica experta. Resultados naturales que respetan la expresividad de tu rostro. Consulta personalizada en Curated by AC.",
+      "faq": [
+        {
+          "question": "¿Cuánto dura el efecto del botox?",
+          "answer": "El efecto del botox dura entre 4 y 6 meses. Con tratamientos regulares, muchas pacientes notan que los intervalos entre sesiones se alargan progresivamente."
+        },
+        {
+          "question": "¿El botox deja un aspecto artificial?",
+          "answer": "No cuando se aplica con la técnica adecuada. En Curated by AC priorizamos un resultado natural que suaviza las arrugas sin perder la expresividad del rostro."
+        },
+        {
+          "question": "¿Se puede combinar el botox con yoga facial?",
+          "answer": "Sí, es nuestra especialidad. El yoga facial fortalece y tonifica la musculatura, complementando y prolongando los efectos del botox para resultados superiores."
+        }
+      ]
     },
     {
       "id": "acido-hialuronico",
       "icon": "Heart",
       "name": "Ácido Hialurónico",
       "benefits": ["Hidratación profunda", "Volumen natural", "Rejuvenecimiento integral"],
-      "description": "Tratamiento de relleno y hidratación profunda que devuelve volumen y suaviza líneas de expresión. Aplicación precisa para resultados armoniosos."
+      "description": "Tratamiento de relleno y hidratación profunda que devuelve volumen y suaviza líneas de expresión. Aplicación precisa para resultados armoniosos.",
+      "longDescription": "El ácido hialurónico es una sustancia que se encuentra de forma natural en nuestra piel y que, con el paso del tiempo, disminuye progresivamente. Los tratamientos de relleno con ácido hialurónico permiten devolver volumen, hidratar en profundidad y suavizar las líneas de expresión de forma segura y con resultados inmediatos.\n\nEn Curated by AC en Bilbao utilizamos ácido hialurónico de máxima calidad, aplicado con técnica precisa para obtener resultados armoniosos y naturales. Cada tratamiento comienza con una valoración facial completa para determinar las zonas que más se beneficiarán: labios, pómulos, surcos nasogenianos, ojeras, mandíbula o manos.\n\nEl procedimiento es mínimamente invasivo. Utilizamos cánulas o agujas finas según la zona a tratar, y aplicamos anestesia tópica para tu máximo confort. La sesión dura entre 20 y 45 minutos dependiendo de las zonas tratadas, y los resultados son visibles de forma inmediata.\n\nLa duración del efecto varía entre 8 y 18 meses según la zona y el tipo de ácido utilizado. Como parte de nuestro enfoque integral, complementamos el tratamiento con técnicas de yoga facial que ayudan a mantener la piel tonificada y los tejidos en óptimas condiciones entre sesiones.",
+      "metaTitle": "Ácido Hialurónico en Bilbao | Relleno Facial Natural",
+      "metaDescription": "Tratamiento de ácido hialurónico en Bilbao. Relleno facial para labios, pómulos y surcos con resultados naturales e inmediatos. Centro Curated by AC.",
+      "faq": [
+        {
+          "question": "¿Cuánto dura el efecto del ácido hialurónico?",
+          "answer": "Dependiendo de la zona tratada y el tipo de producto, el efecto dura entre 8 y 18 meses. Las zonas con más movimiento (labios) suelen necesitar retoques antes."
+        },
+        {
+          "question": "¿Es doloroso el tratamiento?",
+          "answer": "Aplicamos anestesia tópica antes del procedimiento para minimizar las molestias. La mayoría de pacientes lo describen como una ligera presión, totalmente tolerable."
+        },
+        {
+          "question": "¿En qué zonas se puede aplicar?",
+          "answer": "Las zonas más habituales son labios, pómulos, surcos nasogenianos, ojeras, mandíbula y manos. En la consulta personalizada valoramos qué zonas se beneficiarán más en tu caso."
+        }
+      ]
     },
     {
       "id": "consulta-integral",
       "icon": "Users",
       "name": "Consulta Integral",
       "benefits": ["Diagnóstico personalizado", "Plan integral", "Seguimiento profesional"],
-      "description": "Evaluación personalizada que combina análisis facial, valoración de necesidades y diseño de plan de tratamiento integrando yoga facial y medicina estética."
+      "description": "Evaluación personalizada que combina análisis facial, valoración de necesidades y diseño de plan de tratamiento integrando yoga facial y medicina estética.",
+      "longDescription": "La consulta integral es el punto de partida ideal para conocer qué tratamientos se adaptan mejor a tus necesidades y objetivos. En esta sesión personalizada, nuestra especialista realiza un análisis completo de tu rostro, evalúa el estado de tu piel y musculatura facial, y diseña un plan de tratamiento a medida.\n\nEn Curated by AC creemos que cada rostro es único y merece un enfoque personalizado. Por eso, la consulta integral no es una simple valoración: es una experiencia donde dedicamos el tiempo necesario para entender tus preocupaciones, analizar tu historial y proponerte las mejores opciones combinando yoga facial y medicina estética.\n\nDurante la consulta se evalúa el estado de la musculatura facial y su tono, la calidad de la piel incluyendo hidratación, elasticidad y textura, las líneas de expresión y zonas de pérdida de volumen, y tus hábitos de cuidado facial actuales.\n\nCon esta información, diseñamos un plan integral que puede incluir sesiones de yoga facial, tratamientos de medicina estética o una combinación de ambos. El plan incluye objetivos claros, frecuencia recomendada y seguimiento profesional continuo para asegurar los mejores resultados.",
+      "metaTitle": "Consulta de Medicina Estética en Bilbao | Diagnóstico Facial",
+      "metaDescription": "Consulta integral de medicina estética y yoga facial en Bilbao. Diagnóstico personalizado y plan de tratamiento a medida. Pide tu cita en Curated by AC.",
+      "faq": [
+        {
+          "question": "¿Cuánto dura la consulta integral?",
+          "answer": "La consulta dura aproximadamente 30-45 minutos. Dedicamos el tiempo necesario para hacer un análisis completo y diseñar tu plan personalizado sin prisas."
+        },
+        {
+          "question": "¿La consulta tiene algún compromiso?",
+          "answer": "No, la consulta es informativa y sin compromiso. Te presentamos las opciones y tú decides si quieres seguir adelante con el plan propuesto."
+        }
+      ]
     }
   ],
   "whatsapp": "+34623032514",

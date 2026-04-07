@@ -48,6 +48,9 @@ export interface ClinicConfig {
     longDescription?: string
     benefits: string[]
     icon: string
+    metaTitle?: string
+    metaDescription?: string
+    faq?: Array<{ question: string; answer: string }>
   }>
   process: Array<{
     step: number

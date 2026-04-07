@@ -36,9 +36,6 @@ export const metadata: Metadata = {
     locale: 'es_ES',
     type: 'website',
   },
-  alternates: {
-    canonical: 'https://curatedbyac.com',
-  },
   robots: {
     index: true,
     follow: true,
@@ -46,13 +43,24 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const schema = {
+  const businessSchema = {
     '@context': 'https://schema.org',
     '@type': config.schemaType,
+    '@id': 'https://curatedbyac.com/#organization',
     name: config.name,
     description: config.description,
     url: 'https://curatedbyac.com',
     telephone: `+34${config.phone.replace(/\s/g, '')}`,
+    image: 'https://curatedbyac.com/images/hero-skin.webp',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://curatedbyac.com/images/logo.png',
+    },
+    founder: {
+      '@type': 'Person',
+      name: config.team[0]?.name,
+      jobTitle: config.team[0]?.role,
+    },
     address: {
       '@type': 'PostalAddress',
       streetAddress: config.address.street,
@@ -80,6 +88,35 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         closes: '20:00',
       },
     ],
+    priceRange: '€€',
+    areaServed: {
+      '@type': 'City',
+      name: 'Bilbao',
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Tratamientos',
+      itemListElement: config.services.map((s) => ({
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: s.name,
+          description: s.description,
+          url: `https://curatedbyac.com/servicios/${s.id}/`,
+        },
+      })),
+    },
+  }
+
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Curated by AC',
+    url: 'https://curatedbyac.com',
+    publisher: {
+      '@type': 'HealthAndBeautyBusiness',
+      '@id': 'https://curatedbyac.com/#organization',
+    },
   }
 
   return (
@@ -87,7 +124,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body className="antialiased">

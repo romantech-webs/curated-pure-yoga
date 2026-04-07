@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { CartButton } from '@/components/store/CartButton'
 
 const navLinks = [
-  { href: '/#tratamientos', label: 'Tratamientos' },
+  { href: '/servicios/', label: 'Tratamientos' },
   { href: '/tienda/', label: 'Tienda' },
   { href: '/#testimonios', label: 'Testimonios' },
   { href: '/contacto/', label: 'Contacto' },

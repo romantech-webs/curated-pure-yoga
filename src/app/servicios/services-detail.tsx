@@ -1,76 +1,106 @@
-'use client'
-
 import { config } from '@/lib/config'
-import { getIcon } from '@/lib/icons'
-import { motion } from 'framer-motion'
-import { Check } from 'lucide-react'
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs'
+
+const serviceImages: Record<string, string> = {
+  'yoga-facial': '/images/services/yoga-facial-jade.webp',
+  'kinesiotape-facial': '/images/services/yoga-facial.webp',
+  'formacion-yoga-facial': '/images/services/formacion-editorial.webp',
+  'certificacion-instructores': '/images/gallery/sala-tratamiento.webp',
+  'botox': '/images/services/inyeccion-facial.webp',
+  'acido-hialuronico': '/images/services/acido-hialuronico.webp',
+  'consulta-integral': '/images/services/masaje-tratamiento.webp',
+}
+
+const groups = [
+  {
+    title: 'Yoga Facial y Bienestar',
+    description: 'Técnicas naturales para tonificar, rejuvenecer y cuidar tu rostro desde dentro.',
+    ids: ['yoga-facial', 'kinesiotape-facial', 'formacion-yoga-facial', 'certificacion-instructores'],
+  },
+  {
+    title: 'Medicina Estética',
+    description: 'Tratamientos médicos personalizados para resultados visibles y naturales.',
+    ids: ['botox', 'acido-hialuronico', 'consulta-integral'],
+  },
+]
 
 export function ServicesDetail() {
   return (
     <div className="pt-28 pb-20">
-      <div className="mx-auto max-w-4xl px-5 md:px-8">
+      <div className="mx-auto max-w-7xl px-5 md:px-8">
+        {/* Breadcrumbs */}
+        <div className="mb-8">
+          <Breadcrumbs
+            items={[
+              { label: 'Inicio', href: '/' },
+              { label: 'Tratamientos' },
+            ]}
+          />
+        </div>
+
         {/* Page header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-20">
           <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-light text-secondary tracking-wide">
             NUESTROS TRATAMIENTOS
           </h1>
           <p className="mt-4 text-sm text-muted max-w-lg mx-auto leading-relaxed">
             {config.sectionCopy.servicesDescription}
           </p>
-        </motion.div>
-
-        {/* Service details */}
-        <div className="space-y-8">
-          {config.services.map((service) => {
-            const Icon = getIcon(service.icon)
-            return (
-              <motion.div
-                key={service.id}
-                id={service.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-50px' }}
-                transition={{ duration: 0.4 }}
-                className="scroll-mt-24 p-8 md:p-10 border border-neutral-dark"
-              >
-                <div className="flex items-start gap-5">
-                  <div className="w-10 h-10 flex items-center justify-center shrink-0">
-                    <Icon className="w-5 h-5 text-muted" />
-                  </div>
-                  <div>
-                    <h2 className="font-display text-xl md:text-2xl font-medium text-secondary">{service.name}</h2>
-                    <p className="mt-3 text-sm text-muted leading-relaxed">{service.description}</p>
-                    {service.benefits.length > 0 && (
-                      <ul className="mt-5 space-y-2">
-                        {service.benefits.map((b) => (
-                          <li key={b} className="flex items-center gap-3 text-sm text-secondary">
-                            <Check className="w-4 h-4 text-accent shrink-0" />
-                            {b}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                    <div className="mt-6">
-                      <a
-                        href={`https://wa.me/${config.whatsapp.replace(/[^0-9+]/g, '')}?text=${encodeURIComponent(`Hola, me interesa el servicio de ${service.name}. ¿Podrían darme más información?`)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block border border-secondary text-secondary text-xs tracking-widest uppercase px-8 py-3 hover:bg-secondary hover:text-white transition-all duration-300"
-                      >
-                        Consultar
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            )
-          })}
         </div>
+
+        {/* Service groups */}
+        {groups.map((group) => {
+          const services = group.ids
+            .map((id) => config.services.find((s) => s.id === id))
+            .filter(Boolean)
+
+          return (
+            <div key={group.title} className="mb-20 last:mb-0">
+              {/* Group header */}
+              <div className="text-center mb-12">
+                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-light text-secondary tracking-wide">
+                  {group.title.toUpperCase()}
+                </h2>
+                <p className="mt-3 text-sm text-muted max-w-md mx-auto leading-relaxed">
+                  {group.description}
+                </p>
+              </div>
+
+              {/* Service cards grid */}
+              <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
+                {services.map((service) => {
+                  const imageSrc = serviceImages[service!.id] || '/images/services/yoga-facial-jade.webp'
+
+                  return (
+                    <a
+                      key={service!.id}
+                      href={`/servicios/${service!.id}/`}
+                      className="group overflow-hidden"
+                    >
+                      <div className="overflow-hidden">
+                        <img
+                          src={imageSrc}
+                          alt={service!.name}
+                          className="w-full h-[260px] object-cover group-hover:scale-105 transition-transform duration-500"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h3 className="mt-5 font-display text-xl font-light text-secondary tracking-wide group-hover:text-accent transition-colors">
+                        {service!.name}
+                      </h3>
+                      <p className="mt-2 text-sm text-muted leading-relaxed line-clamp-3">
+                        {service!.description}
+                      </p>
+                      <span className="mt-4 inline-block text-xs tracking-widest uppercase text-secondary border-b border-secondary/30 pb-0.5 group-hover:border-secondary transition-colors">
+                        Ver tratamiento
+                      </span>
+                    </a>
+                  )
+                })}
+              </div>
+            </div>
+          )
+        })}
       </div>
     </div>
   )

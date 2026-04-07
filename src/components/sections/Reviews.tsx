@@ -5,33 +5,35 @@ import { Star, Quote } from 'lucide-react'
 
 export function Reviews() {
   return (
-    <section id="testimonios" className="py-16 md:py-24 bg-white">
+    <section id="testimonios" className="py-16 md:py-24 bg-neutral">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-light text-center text-secondary tracking-wide">
-          LO QUE DICEN NUESTRAS CLIENTAS
-        </h2>
+        <div className="text-center">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-light text-secondary tracking-wide">
+            LO QUE DICEN NUESTRAS CLIENTAS
+          </h2>
 
-        {/* Rating summary */}
-        <div className="text-center mt-6 mb-12">
-          <div className="inline-flex items-center gap-1 mb-2">
-            {[...Array(5)].map((_, i) => (
-              <Star
-                key={i}
-                className={`w-4 h-4 ${i < Math.round(config.reviews.rating) ? 'text-accent fill-accent' : 'text-neutral-dark'}`}
-              />
-            ))}
+          {/* Rating summary */}
+          <div className="mt-5 mb-12">
+            <div className="inline-flex items-center gap-1 mb-2">
+              {[...Array(5)].map((_, i) => (
+                <Star
+                  key={i}
+                  className={`w-4 h-4 ${i < Math.round(config.reviews.rating) ? 'text-accent fill-accent' : 'text-neutral-dark'}`}
+                />
+              ))}
+            </div>
+            <p className="text-xs text-muted">
+              <strong className="text-secondary">{config.reviews.rating}</strong> de 5 &middot;{' '}
+              <a
+                href={config.reviews.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-secondary transition-colors"
+              >
+                {config.reviews.count}+ reseñas en Google
+              </a>
+            </p>
           </div>
-          <p className="text-xs text-muted">
-            <strong className="text-secondary">{config.reviews.rating}</strong> de 5 &middot;{' '}
-            <a
-              href={config.reviews.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-secondary transition-colors"
-            >
-              {config.reviews.count}+ reseñas en Google
-            </a>
-          </p>
         </div>
 
         {/* Review cards */}
@@ -39,9 +41,9 @@ export function Reviews() {
           {config.reviews.featured.map((review, i) => (
             <div
               key={i}
-              className="p-6 border border-neutral-dark"
+              className="p-6 bg-white border border-neutral-dark"
             >
-              <Quote className="w-6 h-6 text-neutral-dark mb-3" />
+              <Quote className="w-5 h-5 text-neutral-dark mb-3" />
               <p className="text-sm text-muted leading-relaxed italic">
                 &ldquo;{review.text}&rdquo;
               </p>
